@@ -1,0 +1,58 @@
+table,tr,td{
+    border: solid 1px ;
+    width: 20%;
+    height:30%;
+    border-collapse: collapse;
+}
+tr{
+    border: solid 1px ;   
+}
+
+.tete{
+    height: 40px;
+}
+
+.tete input{
+    border: none;
+}
+
+.ligne1 , .ligne2 ,.ligne3 ,.ligne4 td{
+    height: 55px;
+
+}
+
+.ligne1 td input{
+    margin-left: 25%;
+    height: 35px;
+    width:50%;
+    
+}
+
+.ligne2 td input{
+    margin-left: 25%;
+    height: 35px;
+    width:50%;
+    
+}
+
+.ligne3 td input{
+    margin-left: 25%;
+    height: 35px;
+    width:50%;
+    
+}
+
+.ligne4 td input{
+    margin-left: 25%;
+    height: 35px;
+    width:50%;
+    
+}
+
+
+#nombre{
+    margin-right: none;
+    width: 15px;
+    background-color: white;
+    border: none;
+}

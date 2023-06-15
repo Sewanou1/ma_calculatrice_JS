@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CalculatriceStyle.css">
+    <title>Ma calculatrice en JS</title>
+</head>
+   <body>
+       <table>
+           <tr class="affichage">
+               <td class="tete" colspan="4" id="affichage" class="afficher">
+               </td>
+            </tr>
+           <tr class="">
+              <tr class="ligne1">
+                <td id="id0">
+                    <input type="button" id="button0" value="0" class="nombre">
+                </td>
+                <td id="clean">
+                    <input type="button" id="clean" value="CE" class="nombre">
+                </td>
+                <td id="addition">
+                    <input type="button" id="addition" value="+" class="nombre">
+                </td>
+                <td id="soustraction">
+                    <input type="button" id="soustraction" value="-" class="nombre">
+                </td>
+            </tr>
+
+              <tr class="ligne2"> 
+                <td id="id1" class="marge">
+                    <input type="button" id="button1" value="1" class="nombre">
+                </td>
+                <td id="id2">
+                    <input type="button" id="button2" value="2" class="nombre">
+                </td>
+                <td id="id3">
+                    <input type="button" id="button3" value="3" class="nombre">
+                </td>
+                <td id="multiplication">
+                    <input type="button" id="multiplication" value="*" class="nombre">
+                </td>
+            </tr>
+
+              <tr class="ligne3"> 
+                <td id="id4">
+                    <input type="button" id="button4" value="4" class="nombre">
+                </td>
+                <td id="id5">
+                    <input type="button" id="button5" value="5" class="nombre">
+                </td>
+                <td id="id6">
+                    <input type="button" id="button6" value="6" class="nombre">
+                </td>
+                <td id="division">
+                    <input type="button" id="division" value="/" class="nombre">
+                </td>
+            </tr>
+
+              <tr class="ligne4">
+                <td id="id7">
+                    <input type="button" id="button7" value="7" class="nombre">
+                </td>
+                <td id="id8">
+                    <input type="button" id="button8" value="8" class="nombre">
+                </td>
+                <td  id="id9">
+                    <input type="button" id="button9" value="9" class="nombre">
+                </td >
+                <td id="egalite">
+                    <input type="button" value="=" class="nombre">
+                </td>
+            </tr>
+           </tr>
+       </table>
+   </body>
+
+   <script>
+        var envoie =document.getElementsByClassName('marge');
+        var nombre0,nombre1,nombre2,nombre3,nombre4,nombre5,nombre6,nombre7,nombre8,nombre9=null;
+        nombre0=document.getElementById('button0');
+
+        nombre0=document.getElementById('button0').value;
+        nombre1=document.getElementById('button1').value;
+        nombre2=document.getElementById('button2').value;
+        nombre3=document.getElementById('button3').value;
+        nombre4=document.getElementById('button4').value;
+        nombre5=document.getElementById('button5').value;
+        nombre6=document.getElementById('button6').value;
+        nombre7=document.getElementById('button7').value;
+        nombre8=document.getElementById('button8').value;
+        nombre9=document.getElementById('button9').value;
+        if(nombre0.onclick){
+            document.getElementById('affichage').innerHTML=nombre0;
+        }
+        envoie.onclick=function(){
+            var valeur = document.getElementsByClassName('nombre').value;
+            document.getElementsByClassName('afficher').innerHTML=valeur;
+        }
+   </script>
+</html>
